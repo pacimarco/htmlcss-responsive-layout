@@ -54,6 +54,34 @@ header .box{
 }
 /*fine header*/
 
+/*inizio main*/
+
+/*section-intro*/
+
+#intro .cards{
+    margin-left: -0.75rem;
+    margin-right: -0.75rem;
+}
+
+#intro .card{
+    margin-bottom: 1.5rem;
+    margin-left: 0.75rem;
+    margin-right: 0.75rem;
+    
+
+
+} 
+
+.box{
+    
+    padding: 20px;
+    background-color: var(--primary-color-light);
+}
+
+#intro .card:first-child .box{
+    width: 50%;
+    height: 100%;
+}
 
 
 
@@ -62,14 +90,28 @@ header .box{
 
 /*regole di responsive*/
 
-/*tablet*/
+/*tablet 768*/
 
 
 @media screen and (min-width: 768px){
     .container{
         max-width: 768px;
     }
+
+    .cards{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    #intro .card{
+        width: calc( 33% - 1,5rem);
+    }
+    
+    #intro .card:first-child{
+        width: calc( 66% - 1,5rem);
+    }
 }
+
 
  
 /*browser 992*/
@@ -78,6 +120,12 @@ header .box{
     .container{
         max-width: 992px;
     }
+
+    #intro .card:first-child{
+        display: flex;
+    }
+
+    
 }
     
 /*browser 1200*/
