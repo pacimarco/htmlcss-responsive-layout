@@ -67,6 +67,7 @@ header .box{
     margin-bottom: 1.5rem;
     margin-left: 0.75rem;
     margin-right: 0.75rem;
+    background-color: var(--primary-color-light);
     
 
 
@@ -78,10 +79,19 @@ header .box{
     background-color: var(--primary-color-light);
 }
 
-#intro .card:first-child .box{
-    width: 50%;
-    height: 100%;
-}
+ /*fine section-intro*/
+
+    /*inizio section-planning*/
+
+    #planning{
+        background-color: var(--secondary-color);
+        padding-top: 6rem;
+        padding-bottom: 4rem;
+    }
+
+    #planning .column{
+        margin: 4rem;
+    }
 
 
 
@@ -124,7 +134,19 @@ header .box{
     #intro .card:first-child{
         display: flex;
     }
+    #intro .card:first-child .box{
+        width: 50%;
+        
+    }
 
+    #planning .columns{
+        display: flex;
+        align-items: flex-end;
+    }
+
+    #planning .column{
+        width: calc( 50% - 4rem);
+    }
     
 }
     
