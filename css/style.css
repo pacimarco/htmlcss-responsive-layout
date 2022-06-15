@@ -14,3 +14,76 @@
     --grey-color: #333;
     --yellow-color: #fbc15f;
 }
+
+/*regole comuni*/
+
+.container{
+    max-width: 600px;
+    margin: auto;
+}
+
+.flex{
+    display: flex;
+}
+
+.space-between{
+    justify-content: space-between;
+}
+
+.align-center{
+    align-items: center;
+}
+
+.px-2{
+    padding: 0 2rem;
+}
+
+
+/*header*/
+
+header{
+    width:100%;
+    margin-bottom: 3rem;
+    background-color: var(--primary-color);
+}
+
+header .box{
+    height: 80px;
+    padding: 20px;
+    background-color: var(--primary-color-light);
+}
+/*fine header*/
+
+
+
+
+
+
+
+/*regole di responsive*/
+
+/*tablet*/
+
+
+@media screen and (min-width: 768px){
+    .container{
+        max-width: 768px;
+    }
+}
+
+ 
+/*browser 992*/
+
+@media screen and (min-width: 992px){
+    .container{
+        max-width: 992px;
+    }
+}
+    
+/*browser 1200*/
+
+@media screen and (min-width: 1200px){
+    .container{
+        max-width: 1200px;
+    }
+}
