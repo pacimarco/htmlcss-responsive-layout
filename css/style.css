@@ -93,9 +93,19 @@ header .box{
         margin: 4rem;
     }
 
+   /*fine section-planning*/
 
+    /*inizio section-testimonial*/
 
+    #testimonial .card{
+        padding: 2rem;
+        background-color: var(--secondary-color);
+        margin-bottom: 2rem;
+    }
 
+    #testimonial .card-image{
+        margin: 1rem;
+    }
 
 
 /*regole di responsive*/
@@ -120,6 +130,20 @@ header .box{
     #intro .card:first-child{
         width: calc( 66% - 1,5rem);
     }
+
+    #testimonial .card{
+        display: flex;
+    }
+
+    #testimonial .card-text{
+        flex-grow: 1;
+    }
+
+    #testimonial .card-image{
+        flex-shrink: 0;
+        margin: 0 4rem 0 0;
+    }
+
 }
 
 
