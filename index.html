@@ -5,13 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Responsive-Layout</title>
 </head>
 <body>
     <header> <!-- header -->
         <div class="container flex space-between align-center px-2">
-            <div class="box">Logo</div>
-            <div class="box">Navigation</div>
+           <a href="#"><img src="img/logo.png" alt="logo"></a>
+           <span class="hamburger text-white"><i class="fa-solid fa-bars"></i></span>
+           <nav class="main-menu">
+               <ul>
+                   <li><a href="#planning">Planning</a></li>
+                   <li><a href="#testimonial">Testimonials</a></li>
+                   <li><a href="#planning">Features</a></li>
+                   <li><a href="#planning">About Us</a></li>
+                   <li><a class="rounded btn" href="#">Get Started</a></li>
+               </ul>
+           </nav>
         </div>
     </header> <!-- end header -->
 
@@ -20,29 +30,35 @@
         <section id="intro" class="px-2">
             <div class="container">
                 <div class="cards">
-                    <div class="card">
-                        <div class="box">content</div>
-                        <div class="box">content</div>
+                    <div class="card rounded">
+                        <div class="contents text-center">
+                            <h3 class="title">Get a demo application</h3>
+                            <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure, possimus nobis! Reiciendis earum eos eum hic repudiandae officia, aperiam sint.</p>
+                            <a class="btn rounded" href="#">App Store</a>
+                        </div>
+                        <img class="image" src="img/phone.png" alt="img-intro">
+                        
                     </div>
-                    <div class="card">
-                        <div class="box">content</div>
-                        <div class="box">content</div>
-                        <div class="box">content</div>
+                    <div class="card rounded text-center">
+                        <i class="fa-brands fa-leanpub"></i>
+                        <h3 class="title">Clean Code</h3>
+                        <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla earum aliquid tempora quis temporibus facere voluptates consequuntur a nihil neque!</p>
+                        
                     </div>
-                    <div class="card">
-                        <div class="box">content</div>
-                        <div class="box">content</div>
-                        <div class="box">content</div>
+                    <div class="card rounded text-center">
+                        <i class="fa-solid fa-compass-drafting"></i>
+                        <h3 class="title">Web Design</h3>
+                        <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla earum aliquid tempora quis temporibus facere voluptates consequuntur a nihil neque!</p>
                     </div>
-                    <div class="card">
-                        <div class="box">content</div>
-                        <div class="box">content</div>
-                        <div class="box">content</div>
+                    <div class="card rounded text-center">
+                        <i class="fa-brands fa-leanpub"></i>
+                        <h3 class="title">Developement</h3>
+                        <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla earum aliquid tempora quis temporibus facere voluptates consequuntur a nihil neque!</p>
                     </div>
-                    <div class="card">
-                        <div class="box">content</div>
-                        <div class="box">content</div>
-                        <div class="box">content</div>
+                    <div class="card rounded text-center">
+                        <i class="fa-solid fa-bullhorn"></i>
+                        <h3 class="title">Clean Code</h3>
+                        <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla earum aliquid tempora quis temporibus facere voluptates consequuntur a nihil neque!</p>
                     </div>
                     
 
@@ -51,35 +67,133 @@
         </section> <!-- end section-intro -->
 
         <!--section-planning-->
-        <section id="planning">
-            <div class="container colummns">
-                <div class="column">
-                    <div class="box">element</div>
-                    <div class="box">element</div>
-                    <div class="box">element</div>
+        <section id="planning" class="px-2">
+            <div class="container columns">
+                <div class="column text-center">
+                    <div class="planning-image">
+                        <img src="img/planning1.png" alt="plan-1">
+                    </div>
+                    <div>
+                        <h3 class="title">Strategic Planning</h3>
+                    </div>
+                    <div>
+                        <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex eligendi perspiciatis impedit vitae officiis sequi veniam autem, facere quisquam vero.</p>
+                    </div>
                 </div>
-                <div class="column">
-                    <div class="box">element</div>
-                    <div class="box">element</div>
+                <div class="column text-center">
+                    <div>
+                        <img src="img/planning2.png" alt="plan-2">
+                    </div>
+                    <div>
+                        <h4 class="title">App Developement</h4>
+                    </div>
+                    <div>
+                        <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex eligendi perspiciatis impedit vitae officiis sequi veniam autem, facere quisquam vero.</p>
+                    </div>
                 </div>
             </div>
         </section> <!-- end section-planning -->
 
+        <!--section-testimonial-->
         <section id="testimonial" class="px-2">
             <div class="container">
-                <h2>lorem lorem</h2>
+                <h5 class="title black">TESTIMONIALS</h5>
+                <h3 class="title viola">We are Committed expert partners</h3>
+                <p class="text black">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos rerum cupiditate soluta exercitationem nemo quasi nihil molestias qui reiciendis adipisci!</p>
+
                 <div class="card">
                     <div class="card-image">
-                        <div class="box">content</div>
-                        <div class="box">content</div>
+                        <img src="img/testimonial1.jpg" alt="testimonial-1">
                     </div>
-                    <div class="card-text">
-                        <div class="box">content</div>
-                        <div class="box">content</div>
-                        <div class="box">content</div>
+                    <div class="card-text text-center">
+                        <p class="text">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil fugiat aliquid nobis eaque id aut culpa ex non cumque architecto."</p>
+                        <h5 class="title">Nat Reinolds</h5>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image">
+                        <img src="img/testimonial2.jpg" alt="testimonial-2">
+                    </div>
+                    <div class="card-text text-center">
+                        <p class="text">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil fugiat aliquid nobis eaque id aut culpa ex non cumque architecto."</p>
+                        <h5 class="title">Celia Almeda</h5>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image">
+                        <img src="img/testimonial3.jpg" alt="testimonial-3">
+                    </div>
+                    <div class="card-text text-center">
+                        <p class="text">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil fugiat aliquid nobis eaque id aut culpa ex non cumque architecto."</p>
+                        <h5 class="title">Bob Roberts</h5>
                     </div>
                 </div>
             </div>
+        </section> <!-- end section-testimonial -->
+
+        <!--section-benefit-->
+        <section id="benefit" class="px-2">
+            <div class="container">
+                <h3 class="title">Benefits of working with us</h3>
+                
+                <div class="cards">
+                    <div class="card">
+                        <h3 class="title">01</h3>
+                        <h4 class="title">Hight Quality</h4>
+                        <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque fugiat repellat minima corporis praesentium explicabo totam velit culpa vel labore!</p>
+                        <a class="btn text-white" href="#">more</a>
+                    </div>
+                    <div class="card">
+                        <h3 class="title">02</h3>
+                        <h4 class="title">Creative Team</h4>
+                        <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque fugiat repellat minima corporis praesentium explicabo totam velit culpa vel labore!</p>
+                        <a class="btn text-white" href="#">more</a>
+                    </div>
+                    <div class="card">
+                        <h3 class="title">03</h3>
+                        <h4 class="title">Amazing Result</h4>
+                        <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque fugiat repellat minima corporis praesentium explicabo totam velit culpa vel labore!</p>
+                        <a class="btn text-white" href="#">more</a>
+                    </div>
+                    <div class="card">
+                        <h3 class="title">05</h3>
+                        <h4 class="title">Innovations</h4>
+                        <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque fugiat repellat minima corporis praesentium explicabo totam velit culpa vel labore!</p>
+                        <a class="btn text-white" href="#">more</a>
+                    </div>
+                    <div class="card">
+                        <h3 class="title">06</h3>
+                        <h4 class="title">24/7 Support</h4>
+                        <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque fugiat repellat minima corporis praesentium explicabo totam velit culpa vel labore!</p>
+                        <a class="btn text-white" href="#">more</a>
+                    </div>
+                    
+                </div>
+                        
+                        
+                    
+                
+                        
+                    
+                
+            </div>
+        </section> <!-- end section-benefit -->
+
+        <!--section-about us-->
+        <section id="about-us" class="px-2">
+            <div class="container">
+                <div class="about-text">
+                    <h3 class="title">About us</h3>
+                    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum error doloribus, laborum ullam sunt ab sit similique quisquam voluptatibus provident ipsum nemo! Doloribus ullam quidem quaerat distinctio dicta eius laudantium atque beatae? Natus blanditiis reiciendis libero rerum similique quos numquam.</p>
+                    <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit est doloribus odit. Ratione odit temporibus fugit cumque, soluta porro quaerat maiores autem ad modi voluptatem mollitia rem, facilis doloremque nobis.</p>
+                </div>
+                <div class="about-img">
+                    <img src="img/about.jpg" alt="about-img">
+                    <h4 class="title">I help companies tincidunt tortor aliquam nulla facilisi cras fermentum odio</h4>
+                    <a href="#" class="btn text-white">find me on Linkedin</a>
+                </div>
+            </div>
+
         </section>
     </main>
     

@@ -38,6 +38,26 @@
     padding: 0 2rem;
 }
 
+.rounded{
+    border-radius: 20px;
+    color: #000;
+}
+
+.btn{
+    display: inline-block;
+    padding: 0.5rem;
+    background-color: var(--white-color);
+    
+}
+
+.text-white{
+    color: var(--white-color);
+    width: 10px;
+}
+
+.text-center{
+    text-align: center;
+}
 
 /*header*/
 
@@ -45,6 +65,33 @@ header{
     width:100%;
     margin-bottom: 3rem;
     background-color: var(--primary-color);
+    padding: 1rem;
+}
+
+
+
+
+
+.main-menu{
+    display: none;
+}
+
+.main-menu li{
+    padding: 10px;
+}
+
+.main-menu ul{
+    
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    
+    
+}
+
+.main-menu a{
+    text-decoration: none;
+    color: var(--white-color)
 }
 
 header .box{
@@ -63,15 +110,48 @@ header .box{
     margin-right: -0.75rem;
 }
 
+#intro .cards:first-child{
+    padding: 1rem 1rem 0 1rem;
+}
+
 #intro .card{
     margin-bottom: 1.5rem;
     margin-left: 0.75rem;
     margin-right: 0.75rem;
     background-color: var(--primary-color-light);
+    padding: 1rem;
     
-
-
 } 
+#intro .card .title{
+    margin: 2rem 0;
+}
+
+#intro .image{
+    width: 70%;
+    display: block;
+    margin: 2rem auto 0;
+}
+
+#intro i{
+    font-size: 4rem;
+    color: var(--primary-color);
+}
+
+#intro .h3{
+    color: var(--primary-color);
+    margin: 1,5rem 0;
+}
+
+#intro p{
+    color: var(--text-color);
+    line-height: 1,5rem;
+    margin: 1,5rem 0;
+}
+
+#intro a{
+    margin-top: 2rem;
+    text-decoration: none;
+}
 
 .box{
     
@@ -85,13 +165,25 @@ header .box{
 
     #planning{
         background-color: var(--secondary-color);
-        padding-top: 6rem;
+        padding-top: 2rem;
         padding-bottom: 4rem;
     }
 
     #planning .column{
         margin: 4rem;
     }
+
+    #planning img{
+        width: 100%;
+    }
+    #planning .title{
+        margin: 2rem 0;
+    }
+
+    #planning .columns:last-child{
+        background-color: white;     /*?????*/
+    }
+    
 
    /*fine section-planning*/
 
@@ -103,10 +195,80 @@ header .box{
         margin-bottom: 2rem;
     }
 
-    #testimonial .card-image{
+    #testimonial .card .card-image{
         margin: 1rem;
+        border-radius: 50%;
+        width: 60%
     }
 
+    .card-image img{
+        width: 80%;
+        border-radius: 50%;
+    }
+    #testimonial{
+        margin-top: 2rem;
+    }
+    #testimonial .container .title , #testimonial .container .text{
+        margin: 1rem 0;
+        color: var(--white-color);
+    }
+    .viola{
+        color:var(--secondary-color)
+    }
+    .black{
+        color:var(--text-color)
+    }
+    /*fine section-testimonial*/
+
+    /*inizio section-benefits*/
+
+    #benefit .card{
+        margin-bottom: 1.5rem;
+        margin-left: 0.75rem;
+        margin-right: 0.75rem;
+        background-color: var(--primary-color-light);
+        
+    
+    
+    } 
+    #benefit .container{
+        background-color: var(--secondary-color);
+    }
+    #benefit .container .title{
+        color: var(--white-color);
+    }
+    #benefit .container .cards .card .title{
+        color: var(--secondary-color);
+        margin: 1rem 0;
+    }
+    #benefit .container .cards .card {
+        background-color: var(--white-color);
+        border-radius: 20px;
+        padding: 1rem;
+        
+    }
+    /*fine section-benefits*/
+    /*inizio section-about us*/
+    #about-us{
+        
+        padding-top: 2rem;
+        padding-bottom: 4rem;
+    }
+    .about-img{
+        margin: 1rem;
+        border-radius: 50%;
+        width: 60%
+    }
+    .about-img img{
+        width: 80%;
+        border-radius: 50%;
+    }
+    .about-text p{
+        margin: 1.5rem 0;
+    }
+
+    
+    
 
 /*regole di responsive*/
 
@@ -123,12 +285,12 @@ header .box{
         flex-wrap: wrap;
     }
     
-    #intro .card{
-        width: calc( 33% - 1,5rem);
+    #intro .cards .card{
+        width: calc( 30% - 1,5rem);
     }
-    
-    #intro .card:first-child{
-        width: calc( 66% - 1,5rem);
+                                        /*non prende le proporzioni, se ispeziono è sbarrato*/
+    #intro .cards:first-child{
+        width: calc( 60% - 1,5rem);
     }
 
     #testimonial .card{
@@ -144,6 +306,18 @@ header .box{
         margin: 0 4rem 0 0;
     }
 
+    #intro .image{
+        margin: 2rem 0 0 0;
+        width: 60%;
+    }
+
+    #benefit .container .cards .card{
+        width:45%;
+    }
+    #benefit .container .cards{
+        display: flex;                  /*non prende le proporzioni, non prende flex se ispeziono è sbarrato*/
+        flex-wrap: wrap;
+    }
 }
 
 
@@ -170,6 +344,14 @@ header .box{
 
     #planning .column{
         width: calc( 50% - 4rem);
+    }
+
+    .hamburger{
+        display: none;
+    }
+
+    .main-menu {
+        display: block;
     }
     
 }
